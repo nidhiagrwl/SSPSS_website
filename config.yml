@@ -1,0 +1,169 @@
+---
+baseURL: https://piko-heksagon.netlify.app/
+languageCode: en-us
+title: SSPSS
+theme: piko
+paginate: "9"
+copyright: A template by [Heksagon](https://www.heksagon.net "Your most friendly developer")
+googleAnalytics: # Enter Google Analytics ie. UA-012345678-9
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+
+params:
+  analytics:
+    google:
+      SiteVerificationTag: # Google Site Verification
+    yandex:
+      SiteVerificationTag: # Yandex Site Verification
+    bing:
+      SiteVerificationTag: # Bing Site Verification
+  env: production
+  author: श्री श्याम प्रचार सेवा समिति
+  description: श्री श्याम प्रचार सेवा समिति - एक धार्मिक और सामाजिक संस्था है, जिसका उद्देश्य श्री श्याम के धार्मिक प्रचार और सेवा कार्यों को बढ़ावा देना है।
+  math: false
+  images:
+  - "/uploads/og.webp"
+  label:
+    title: _श्री श्याम प्रचार सेवा समिति_
+    text: स्वागत है श्री श्याम प्रचार सेवा समिति की वेबसाइट पर
+    lightNavIcon: /uploads/sun.svg
+    darkNavIcon: /uploads/zap.svg
+    iconHeight: "35"
+    iconWIdth: "35"
+  comments: true
+  mainSections:
+  - blog
+  ShowShareButtons: true
+  ShowCodeCopyButtons: true
+  ShowRelated: true
+  CookieNotice: स्वागत है श्री श्याम प्रचार सेवा समिति की वेबसाइट पर
+  CookieLink: /legal/privacy/#cookies-and-web-beacons
+  CookieButton: Cookies Policy
+  disableAnchoredHeadings: false
+  contactFormAction: # Get link from https://formsubmit.io or https://fabform.io
+  assets:
+    disableFingerprinting: false
+    favicon: /uploads/zap.svg
+    favicon16x16: /uploads/zap.svg
+    favicon32x32: /uploads/zap.svg
+    apple_touch_icon: /uploads/zap.svg
+    safari_pinned_tab: /uploads/zap.svg
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+  homepage:
+    # Hero Section
+    disableHeroSection: false
+    heroUpperTitle: 
+    heroTitle: श्री श्याम प्रचार सेवा समिति 
+    heroDescription: श्री श्याम प्रचार सेवा समिति - एक धार्मिक और सामाजिक संस्था है, जिसका उद्देश्य श्री श्याम के धार्मिक प्रचार और सेवा कार्यों को बढ़ावा देना है। इस समिति का काम श्री श्याम के उपासकों के बीच धार्मिक जागरूकता फैलाना और समाज में सेवा कार्यों को प्रोत्साहित करना है।
+    heroCTAPrimaryText: Blog
+    heroCTAPrimaryUrl: "/blog/"
+    heroCTASecondaryText: Contact Me
+    heroCTASecondaryUrl: "/contact/"
+    heroBackgroundImage: "/uploads/portfolio-1.webp"
+    # Blog Section
+    disableBlogSection: false
+    blogTitle: हमारी सेवाएँ
+    blogDescription: श्री श्याम प्रचार सेवा समिति की सामाजिक पहल
+    seeMoreText: More Posts
+    # About Section    
+    disableAboutSection: false
+    aboutTitle: परिचय
+    aboutDescription: 
+    aboutImgUrl: "/uploads/self.webp"
+    aboutContent: श्री श्याम प्रचार सेवा समिति - एक धार्मिक और सामाजिक संस्था है, जिसका उद्देश्य श्री श्याम के धार्मिक प्रचार और सेवा कार्यों को बढ़ावा देना है। इस समिति का काम श्री श्याम के उपासकों के बीच धार्मिक जागरूकता फैलाना और समाज में सेवा कार्यों को प्रोत्साहित करना है।
+    # Portfolio Section
+    disablePortfolioSection: false
+    portfolioTitle: फोटो गैलरी
+    portfolioDescription:
+    portfolio:
+    - imageUrl: /uploads/portfolio-1.webp
+      alt: # image alt for better SEO
+      description: Portfolio One.
+      websiteUrl: #
+    - imageUrl: /uploads/portfolio-2.webp
+      alt: # image alt for better SEO
+      description: Portfolio Two.
+      websiteUrl: #
+    - imageUrl: /uploads/portfolio-3.webp
+      alt: # image alt for better SEO
+      description: Portfolio Three.
+      websiteUrl: #
+  # Search Options (https://fusejs.io/)
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: "0"
+    distance: "1000"
+    threshold: "0.4"
+    minMatchCharLength: "0"
+    keys:
+    - title
+    - permalink
+    - summary
+    - content
+  plugins:
+    css:
+    - link: plugins/css/pico.min.css
+    js:
+    - link: plugins/js/feather.min.js
+menus:
+  main: # Main Menu
+  - name: Blog
+    title: Blog
+    pre: pen-tool
+    url: "/blog"
+    weight: "20"
+  - name: परिचय
+    title: परिचय
+    pre: book
+    url: "/parichay"
+    weight: "20"
+  - name: हमारी सेवाएँ
+    title: हमारी सेवाएँ
+    pre: book
+    url: "/sewa"
+    weight: "20"
+  - name: Search
+    title: Search
+    pre: search
+    url: "/search"
+    weight: "30"
+  - name: संपर्क
+    title: संपर्क
+    pre: mail
+    url: "/contact"
+    weight: "25"
+  search: # Search page's quick links
+  - name: Categories
+    title: Categories
+    url: "/categories"
+    weight: "10"
+  - name: Archives
+    title: Archives
+    url: "/archives"
+    weight: "20"
+  - name: Tags
+    title: Tags
+    url: "/tags"
+    weight: "30"
+  
